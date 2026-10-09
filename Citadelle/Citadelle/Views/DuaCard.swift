@@ -46,8 +46,14 @@ struct DuaCard: View {
                     .foregroundStyle(.secondary)
             }
 
-            Text(dua.translation.text(for: language))
-                .font(.body)
+            if let translation = dua.translation[language], !translation.isEmpty {
+                Text(translation)
+                    .font(.body)
+            } else {
+                Text("Traduction française en cours de rédaction.")
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+            }
 
             if let note = dua.note?[language] {
                 Text(note)

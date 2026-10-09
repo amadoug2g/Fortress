@@ -1,0 +1,2366 @@
+{
+ "1": {
+  "titleFrShort": "Au réveil",
+  "keywordsFr": [
+   "réveil",
+   "se réveiller",
+   "se lever",
+   "au lever",
+   "matin",
+   "sortir du lit",
+   "réveil la nuit",
+   "tahajjud",
+   "après le sommeil",
+   "invocation du réveil"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "TIME",
+   "QUICK_ACCESS"
+  ]
+ },
+ "2": {
+  "titleFrShort": "En s'habillant",
+  "keywordsFr": [
+   "s'habiller",
+   "vêtement",
+   "habits",
+   "tenue",
+   "mettre ses vêtements",
+   "se vêtir",
+   "se préparer le matin",
+   "habillement"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "3": {
+  "titleFrShort": "Vêtement neuf",
+  "keywordsFr": [
+   "vêtement neuf",
+   "habit neuf",
+   "étrenner",
+   "nouveaux vêtements",
+   "nouvelle tenue",
+   "tenue de l'Aïd",
+   "Aïd",
+   "acheter des vêtements"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "HIJRI"
+  ]
+ },
+ "4": {
+  "titleFrShort": "Pour qui porte du neuf",
+  "keywordsFr": [
+   "compliment",
+   "complimenter",
+   "féliciter",
+   "vêtement neuf",
+   "habit neuf",
+   "nouvelle tenue",
+   "étrenner",
+   "Aïd",
+   "invocation pour un ami"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "5": {
+  "titleFrShort": "En se déshabillant",
+  "keywordsFr": [
+   "se déshabiller",
+   "se dévêtir",
+   "enlever ses vêtements",
+   "retirer ses habits",
+   "se changer",
+   "douche",
+   "pudeur",
+   "bismillah"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "6": {
+  "titleFrShort": "En entrant aux toilettes",
+  "keywordsFr": [
+   "toilettes",
+   "WC",
+   "petit coin",
+   "aller aux toilettes",
+   "entrer aux toilettes",
+   "cabinets",
+   "salle de bain",
+   "protection contre les démons",
+   "besoin naturel"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "7": {
+  "titleFrShort": "En sortant des toilettes",
+  "keywordsFr": [
+   "sortir des toilettes",
+   "WC",
+   "petit coin",
+   "quitter les toilettes",
+   "ghufranak",
+   "pardon",
+   "salle de bain"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "8": {
+  "titleFrShort": "Avant les ablutions",
+  "keywordsFr": [
+   "ablutions",
+   "faire ses ablutions",
+   "wudu",
+   "woudou",
+   "wudhu",
+   "avant les ablutions",
+   "petites ablutions",
+   "bismillah",
+   "purification"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "9": {
+  "titleFrShort": "Après les ablutions",
+  "keywordsFr": [
+   "après les ablutions",
+   "fin des ablutions",
+   "wudu",
+   "woudou",
+   "shahada",
+   "attestation de foi",
+   "se purifier",
+   "purification"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "10": {
+  "titleFrShort": "En sortant de chez soi",
+  "keywordsFr": [
+   "sortir de la maison",
+   "sortir de chez soi",
+   "quitter la maison",
+   "partir",
+   "aller au travail",
+   "porte",
+   "tawakkul",
+   "confiance en Allah",
+   "bismillah tawakkaltu"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ },
+ "11": {
+  "titleFrShort": "En rentrant chez soi",
+  "keywordsFr": [
+   "rentrer à la maison",
+   "rentrer chez soi",
+   "entrer chez soi",
+   "arriver à la maison",
+   "retour à la maison",
+   "salam",
+   "saluer sa famille",
+   "foyer"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ },
+ "12": {
+  "titleFrShort": "En allant à la mosquée",
+  "keywordsFr": [
+   "aller à la mosquée",
+   "chemin de la mosquée",
+   "sortir pour la prière",
+   "invocation de la lumière",
+   "nour",
+   "lumière",
+   "prière du fajr",
+   "prière du vendredi",
+   "jumu'a",
+   "masjid"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "13": {
+  "titleFrShort": "En entrant à la mosquée",
+  "keywordsFr": [
+   "entrer à la mosquée",
+   "arriver à la mosquée",
+   "mosquée",
+   "masjid",
+   "pied droit",
+   "portes de la miséricorde",
+   "salle de prière"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "14": {
+  "titleFrShort": "En sortant de la mosquée",
+  "keywordsFr": [
+   "sortir de la mosquée",
+   "quitter la mosquée",
+   "pied gauche",
+   "grâce d'Allah",
+   "après la prière",
+   "fin de la prière",
+   "masjid"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "15": {
+  "titleFrShort": "En entendant l'adhan",
+  "keywordsFr": [
+   "adhan",
+   "adhane",
+   "azan",
+   "appel à la prière",
+   "muezzin",
+   "répondre à l'adhan",
+   "après l'adhan",
+   "wasila",
+   "heure de prière",
+   "iqama"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "16": {
+  "titleFrShort": "Ouverture de la prière",
+  "keywordsFr": [
+   "début de la prière",
+   "ouverture de la prière",
+   "invocation d'ouverture",
+   "istiftah",
+   "après le takbir",
+   "allahou akbar",
+   "subhanaka allahumma",
+   "apprendre la prière"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "17": {
+  "titleFrShort": "Pendant l'inclinaison",
+  "keywordsFr": [
+   "inclinaison",
+   "s'incliner",
+   "rukû",
+   "roukou",
+   "ruku",
+   "subhana rabbiya al-adhim",
+   "prière",
+   "apprendre la prière"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "18": {
+  "titleFrShort": "Après l'inclinaison",
+  "keywordsFr": [
+   "se relever de l'inclinaison",
+   "redressement",
+   "se redresser",
+   "sami Allahu liman hamidah",
+   "rabbana wa laka al-hamd",
+   "rukû",
+   "prière",
+   "apprendre la prière"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "19": {
+  "titleFrShort": "Pendant la prosternation",
+  "keywordsFr": [
+   "prosternation",
+   "se prosterner",
+   "sujud",
+   "soujoud",
+   "subhana rabbiya al-a'la",
+   "invocation en prosternation",
+   "prière",
+   "apprendre la prière"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "20": {
+  "titleFrShort": "Entre les deux prosternations",
+  "keywordsFr": [
+   "entre les deux prosternations",
+   "assise entre deux sujud",
+   "jalsa",
+   "rabbi ighfir li",
+   "demander pardon",
+   "prière",
+   "apprendre la prière"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "21": {
+  "titleFrShort": "Prosternation de récitation",
+  "keywordsFr": [
+   "prosternation de récitation",
+   "prosternation de lecture",
+   "sujud tilawa",
+   "verset de prosternation",
+   "sajda",
+   "lire le Coran",
+   "lecture du Coran",
+   "récitation"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "22": {
+  "titleFrShort": "Le tashahhud",
+  "keywordsFr": [
+   "tashahhud",
+   "tachahoud",
+   "attahiyyat",
+   "at-tahiyyatou lillah",
+   "assise de la prière",
+   "dernière assise",
+   "prière",
+   "apprendre la prière"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "23": {
+  "titleFrShort": "Prière sur le Prophète",
+  "keywordsFr": [
+   "prière sur le prophète",
+   "salat sur le prophète",
+   "salawat",
+   "salat ibrahimiya",
+   "prière ibrahimique",
+   "allahumma salli ala muhammad",
+   "tachahhoud",
+   "tashahhud",
+   "assise de la prière",
+   "comment prier sur le prophète"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "24": {
+  "titleFrShort": "Avant le salâm final",
+  "keywordsFr": [
+   "avant le salam",
+   "fin de la prière",
+   "dernier tachahhoud",
+   "invocations dans la prière",
+   "doua avant le taslim",
+   "taslim",
+   "dajjal",
+   "châtiment de la tombe",
+   "pardon",
+   "paradis"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "25": {
+  "titleFrShort": "Après la prière",
+  "keywordsFr": [
+   "après la prière",
+   "adhkar après la salat",
+   "après le salam",
+   "dhikr après la prière",
+   "tasbih",
+   "33 fois",
+   "subhanallah alhamdulillah allahu akbar",
+   "astaghfirullah",
+   "allahumma anta salam",
+   "ayat al kursi",
+   "après fajr",
+   "après maghrib"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "26": {
+  "titleFrShort": "Istikhâra",
+  "keywordsFr": [
+   "istikhara",
+   "prière de consultation",
+   "salat al istikhara",
+   "décision",
+   "prendre une décision",
+   "hésitation",
+   "choix",
+   "mariage",
+   "travail",
+   "déménagement",
+   "demander conseil à Allah"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "TIME"
+  ]
+ },
+ "27": {
+  "titleFrShort": "Adhkar du matin et du soir",
+  "keywordsFr": [
+   "adhkar du matin",
+   "adhkar du soir",
+   "invocations du matin",
+   "invocations du soir",
+   "dhikr du matin",
+   "azkar",
+   "matin",
+   "soir",
+   "protection",
+   "ayat al kursi",
+   "sayyid al istighfar",
+   "routine spirituelle"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "TIME",
+   "PRAYER",
+   "FOCUS_FILTER",
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ },
+ "28": {
+  "titleFrShort": "Avant de dormir",
+  "keywordsFr": [
+   "avant de dormir",
+   "coucher",
+   "invocations du coucher",
+   "dormir",
+   "sommeil",
+   "nuit",
+   "se coucher",
+   "bonne nuit",
+   "ayat al kursi",
+   "sourate al mulk",
+   "souffler dans les mains",
+   "trois qul"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "TIME",
+   "FOCUS_FILTER",
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ },
+ "29": {
+  "titleFrShort": "Réveil pendant la nuit",
+  "keywordsFr": [
+   "réveil la nuit",
+   "se réveiller la nuit",
+   "réveillé en pleine nuit",
+   "se retourner dans le lit",
+   "nuit",
+   "insomnie",
+   "pas dormir",
+   "la ilaha illallah al wahid al qahhar"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "30": {
+  "titleFrShort": "Peur ou solitude la nuit",
+  "keywordsFr": [
+   "peur de dormir",
+   "peur la nuit",
+   "peur du noir",
+   "seul la nuit",
+   "solitude",
+   "sentiment de solitude",
+   "angoisse la nuit",
+   "déprime",
+   "insomnie",
+   "frayeur",
+   "sursaut"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "31": {
+  "titleFrShort": "Après un cauchemar",
+  "keywordsFr": [
+   "cauchemar",
+   "mauvais rêve",
+   "rêve effrayant",
+   "faire un cauchemar",
+   "que faire après un cauchemar",
+   "réveil en sursaut",
+   "peur la nuit",
+   "cracher à gauche",
+   "rêve de shaytan"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "32": {
+  "titleFrShort": "Qunût du witr",
+  "keywordsFr": [
+   "qunut",
+   "qounout",
+   "witr",
+   "prière du witr",
+   "doua du witr",
+   "allahumma ihdini fiman hadayt",
+   "tarawih",
+   "ramadan",
+   "prière de nuit",
+   "qiyam"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "PRAYER",
+   "TIME",
+   "QUICK_ACCESS"
+  ]
+ },
+ "33": {
+  "titleFrShort": "Après le witr",
+  "keywordsFr": [
+   "après le witr",
+   "fin du witr",
+   "subhan al malik al quddus",
+   "witr",
+   "prière de nuit",
+   "tarawih"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "34": {
+  "titleFrShort": "Soucis et tristesse",
+  "keywordsFr": [
+   "soucis",
+   "inquiétude",
+   "tristesse",
+   "chagrin",
+   "stress",
+   "anxiété",
+   "angoisse",
+   "déprime",
+   "coup de blues",
+   "mal-être",
+   "allahumma inni abduk",
+   "hamm"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "35": {
+  "titleFrShort": "En cas de détresse",
+  "keywordsFr": [
+   "détresse",
+   "angoisse",
+   "panique",
+   "épreuve",
+   "malheur",
+   "mauvaise nouvelle",
+   "coup dur",
+   "désespoir",
+   "doua de younous",
+   "la ilaha illa anta subhanaka",
+   "karb"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "36": {
+  "titleFrShort": "Face à un adversaire",
+  "keywordsFr": [
+   "adversaire",
+   "ennemi",
+   "patron",
+   "rendez-vous difficile",
+   "convocation",
+   "tribunal",
+   "police",
+   "contrôle de police",
+   "autorité",
+   "confrontation",
+   "hasbunallah wa nimal wakil"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "TIME"
+  ]
+ },
+ "37": {
+  "titleFrShort": "Contre l'oppression",
+  "keywordsFr": [
+   "injustice",
+   "oppression",
+   "oppresseur",
+   "zulm",
+   "abus de pouvoir",
+   "chef toxique",
+   "patron injuste",
+   "harcèlement au travail",
+   "tyran",
+   "dirigeant injuste",
+   "persécution"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "38": {
+  "titleFrShort": "Contre un ennemi",
+  "keywordsFr": [
+   "ennemi",
+   "ennemis",
+   "contre les ennemis",
+   "coalisés",
+   "ahzab",
+   "agression",
+   "guerre",
+   "victoire"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "39": {
+  "titleFrShort": "Si l'on se sent menacé",
+  "keywordsFr": [
+   "peur des gens",
+   "menace",
+   "menacé",
+   "danger",
+   "agression",
+   "peur d'être agressé",
+   "harcèlement",
+   "insécurité",
+   "rue la nuit",
+   "protection",
+   "allahumma ikfinihim"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "40": {
+  "titleFrShort": "Doutes dans la foi",
+  "keywordsFr": [
+   "doute",
+   "doutes",
+   "doute dans la foi",
+   "waswas",
+   "waswasa",
+   "pensées intrusives",
+   "foi",
+   "iman",
+   "qui a créé Allah",
+   "crise de foi"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "41": {
+  "titleFrShort": "Dettes et soucis d'argent",
+  "keywordsFr": [
+   "dette",
+   "dettes",
+   "crédit",
+   "argent",
+   "rembourser",
+   "problèmes d'argent",
+   "fin de mois",
+   "découvert",
+   "pauvreté",
+   "subsistance",
+   "rizq",
+   "halal"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "TIME",
+   "QUICK_ACCESS"
+  ]
+ },
+ "42": {
+  "titleFrShort": "Distrait dans la prière",
+  "keywordsFr": [
+   "distraction prière",
+   "distrait dans la prière",
+   "concentration",
+   "pas concentré",
+   "waswas dans la prière",
+   "khanzab",
+   "khushu",
+   "khouchou",
+   "satan",
+   "lecture du coran"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "43": {
+  "titleFrShort": "Quand c'est difficile",
+  "keywordsFr": [
+   "difficulté",
+   "c'est difficile",
+   "examen",
+   "galère",
+   "bloqué",
+   "tâche difficile",
+   "révisions",
+   "démarches",
+   "facilité",
+   "allahumma la sahla"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "FOCUS_FILTER",
+   "TIME"
+  ]
+ },
+ "44": {
+  "titleFrShort": "Après un péché",
+  "keywordsFr": [
+   "péché",
+   "j'ai péché",
+   "repentir",
+   "se repentir",
+   "tawba",
+   "pardon",
+   "prière du repentir",
+   "deux rakaat",
+   "regret",
+   "faute",
+   "istighfar"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "45": {
+  "titleFrShort": "Contre les murmures de Satan",
+  "keywordsFr": [
+   "satan",
+   "diable",
+   "chaytan",
+   "waswas",
+   "murmures",
+   "tentation",
+   "doutes",
+   "chasser le diable",
+   "a'udhu billah",
+   "protection"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "46": {
+  "titleFrShort": "Face à une contrariété",
+  "keywordsFr": [
+   "échec",
+   "contrariété",
+   "déception",
+   "imprévu",
+   "destin",
+   "qadar",
+   "qaddara Allah",
+   "malchance",
+   "si seulement",
+   "raté"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "47": {
+  "titleFrShort": "Pour une naissance",
+  "keywordsFr": [
+   "naissance",
+   "bébé",
+   "nouveau-né",
+   "félicitations",
+   "jeunes parents",
+   "accouchement",
+   "mabrouk",
+   "barakallahu",
+   "aqiqa"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "48": {
+  "titleFrShort": "Protéger ses enfants",
+  "keywordsFr": [
+   "enfants",
+   "protéger ses enfants",
+   "mauvais œil",
+   "ruqya",
+   "bébé",
+   "coucher des enfants",
+   "Hassan et Hussein",
+   "u'idhukuma",
+   "protection"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "TIME",
+   "QUICK_ACCESS"
+  ]
+ },
+ "49": {
+  "titleFrShort": "En visitant un malade",
+  "keywordsFr": [
+   "malade",
+   "visite malade",
+   "hôpital",
+   "guérison",
+   "chifa",
+   "maladie",
+   "rendre visite",
+   "EHPAD",
+   "la ba's tahur"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "SHORTCUTS_AUTOMATION"
+  ]
+ },
+ "50": {
+  "titleFrShort": "Mérite de la visite au malade",
+  "keywordsFr": [
+   "mérite visite malade",
+   "récompense",
+   "anges",
+   "hadith malade",
+   "visiter un malade"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "51": {
+  "titleFrShort": "Le malade en fin de vie",
+  "keywordsFr": [
+   "fin de vie",
+   "mourant",
+   "agonie",
+   "maladie grave",
+   "derniers instants",
+   "soins palliatifs",
+   "rafiq al-a'la",
+   "mort"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "52": {
+  "titleFrShort": "Assister un mourant",
+  "keywordsFr": [
+   "talqin",
+   "chahada",
+   "mourant",
+   "dernières paroles",
+   "la ilaha illa Allah",
+   "agonie",
+   "fin de vie"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "53": {
+  "titleFrShort": "Face à un malheur",
+  "keywordsFr": [
+   "malheur",
+   "épreuve",
+   "décès",
+   "mauvaise nouvelle",
+   "inna lillah",
+   "perte",
+   "deuil",
+   "musiba",
+   "catastrophe"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "54": {
+  "titleFrShort": "En fermant les yeux du défunt",
+  "keywordsFr": [
+   "décès",
+   "défunt",
+   "fermer les yeux",
+   "mort",
+   "décédé",
+   "invocation défunt",
+   "mourir"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "55": {
+  "titleFrShort": "Prière mortuaire (janaza)",
+  "keywordsFr": [
+   "janaza",
+   "prière mortuaire",
+   "prière funéraire",
+   "salat al-janaza",
+   "funérailles",
+   "obsèques",
+   "enterrement",
+   "défunt"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "56": {
+  "titleFrShort": "Prière mortuaire d'un enfant",
+  "keywordsFr": [
+   "janaza enfant",
+   "prière mortuaire enfant",
+   "enfant décédé",
+   "perte d'un enfant",
+   "funérailles enfant",
+   "farat"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "57": {
+  "titleFrShort": "Présenter ses condoléances",
+  "keywordsFr": [
+   "condoléances",
+   "deuil",
+   "décès",
+   "réconforter",
+   "famille du défunt",
+   "message de condoléances",
+   "ta'ziya",
+   "a'dhama Allahu ajrak"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "58": {
+  "titleFrShort": "En mettant le défunt en terre",
+  "keywordsFr": [
+   "enterrement",
+   "inhumation",
+   "mise en terre",
+   "tombe",
+   "funérailles",
+   "bismillah wa 'ala sunna"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "59": {
+  "titleFrShort": "Après l'enterrement",
+  "keywordsFr": [
+   "après l'enterrement",
+   "inhumation",
+   "tombe",
+   "défunt",
+   "obsèques",
+   "thabbit-hu",
+   "funérailles"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "60": {
+  "titleFrShort": "Au cimetière",
+  "keywordsFr": [
+   "cimetière",
+   "tombe",
+   "visite tombe",
+   "défunts",
+   "ziyara",
+   "salam aux morts",
+   "assalamu alaykum ahl ad-diyar"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ },
+ "61": {
+  "titleFrShort": "Quand le vent souffle",
+  "keywordsFr": [
+   "vent",
+   "vent fort",
+   "tempête",
+   "rafales",
+   "bourrasque",
+   "vent violent"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "WEATHER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "62": {
+  "titleFrShort": "Quand le tonnerre gronde",
+  "keywordsFr": [
+   "tonnerre",
+   "orage",
+   "éclair",
+   "foudre",
+   "ra'd",
+   "subhana alladhi yusabbihu"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "WEATHER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "63": {
+  "titleFrShort": "Pour demander la pluie",
+  "keywordsFr": [
+   "demander la pluie",
+   "istisqa",
+   "sécheresse",
+   "manque de pluie",
+   "prière de la pluie",
+   "aghithna"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "64": {
+  "titleFrShort": "Quand il pleut",
+  "keywordsFr": [
+   "pluie",
+   "il pleut",
+   "averse",
+   "pluie bénéfique",
+   "temps pluvieux",
+   "sayyiban nafi'an"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "WEATHER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "65": {
+  "titleFrShort": "Après la pluie",
+  "keywordsFr": [
+   "après la pluie",
+   "fin de la pluie",
+   "mutirna",
+   "grâce d'Allah",
+   "pluie"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "WEATHER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "66": {
+  "titleFrShort": "Quand il pleut trop",
+  "keywordsFr": [
+   "trop de pluie",
+   "inondation",
+   "pluie torrentielle",
+   "intempéries",
+   "crue",
+   "faire cesser la pluie",
+   "hawalayna wa la 'alayna"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "WEATHER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "67": {
+  "titleFrShort": "En voyant le croissant de lune",
+  "keywordsFr": [
+   "lune",
+   "croissant",
+   "nouvelle lune",
+   "nouveau mois",
+   "hilal",
+   "mois hégirien",
+   "début du ramadan",
+   "ciel"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "HIJRI",
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "68": {
+  "titleFrShort": "À la rupture du jeûne",
+  "keywordsFr": [
+   "iftar",
+   "ftour",
+   "rompre le jeûne",
+   "ramadan",
+   "jeûne",
+   "maghrib",
+   "dattes",
+   "coucher du soleil"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "PRAYER",
+   "HIJRI"
+  ]
+ },
+ "69": {
+  "titleFrShort": "Avant de manger",
+  "keywordsFr": [
+   "manger",
+   "repas",
+   "avant de manger",
+   "bismillah",
+   "nourriture",
+   "déjeuner",
+   "dîner",
+   "lait",
+   "oubli bismillah"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "TIME"
+  ]
+ },
+ "70": {
+  "titleFrShort": "Après le repas",
+  "keywordsFr": [
+   "après manger",
+   "fin du repas",
+   "rassasié",
+   "alhamdulillah",
+   "louange",
+   "nourriture",
+   "repas terminé"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "TIME"
+  ]
+ },
+ "71": {
+  "titleFrShort": "Pour son hôte après un repas",
+  "keywordsFr": [
+   "invité",
+   "hôte",
+   "dîner chez quelqu'un",
+   "remercier l'hôte",
+   "chez des amis",
+   "repas invité",
+   "réception",
+   "famille"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "72": {
+  "titleFrShort": "Pour qui offre à boire",
+  "keywordsFr": [
+   "boire",
+   "offrir à boire",
+   "verre d'eau",
+   "café",
+   "thé",
+   "remercier",
+   "on m'offre à manger",
+   "nourrir"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "73": {
+  "titleFrShort": "Invité à rompre le jeûne",
+  "keywordsFr": [
+   "iftar chez quelqu'un",
+   "invitation ramadan",
+   "ftour invité",
+   "rompre le jeûne chez",
+   "remercier hôtes",
+   "jeûne",
+   "ramadan"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "HIJRI"
+  ]
+ },
+ "74": {
+  "titleFrShort": "Invité alors qu'on jeûne",
+  "keywordsFr": [
+   "refuser à manger",
+   "je jeûne",
+   "invitation pendant le jeûne",
+   "décliner un repas",
+   "jeûne surérogatoire",
+   "invité en jeûnant"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "75": {
+  "titleFrShort": "Provoqué pendant le jeûne",
+  "keywordsFr": [
+   "insulte",
+   "dispute",
+   "provocation",
+   "je suis en jeûne",
+   "colère ramadan",
+   "quelqu'un m'insulte",
+   "impoli",
+   "jeûne"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "76": {
+  "titleFrShort": "Les premiers fruits de la saison",
+  "keywordsFr": [
+   "premiers fruits",
+   "fruits de saison",
+   "récolte",
+   "primeurs",
+   "dattes",
+   "marché",
+   "bénédiction",
+   "nouvelle saison"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "77": {
+  "titleFrShort": "En éternuant",
+  "keywordsFr": [
+   "éternuer",
+   "éternuement",
+   "à tes souhaits",
+   "yarhamuk Allah",
+   "alhamdulillah",
+   "répondre éternuement"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "78": {
+  "titleFrShort": "Si un non-musulman éternue",
+  "keywordsFr": [
+   "éternuement non-musulman",
+   "éternuer",
+   "collègue éternue",
+   "répondre",
+   "yahdikumullah",
+   "non-musulman"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "79": {
+  "titleFrShort": "Féliciter les mariés",
+  "keywordsFr": [
+   "mariage",
+   "féliciter",
+   "mariés",
+   "noces",
+   "barakAllahu lak",
+   "félicitations mariage",
+   "nikah"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "80": {
+  "titleFrShort": "L'époux au mariage",
+  "keywordsFr": [
+   "nuit de noces",
+   "mariage",
+   "époux",
+   "épouse",
+   "jeune marié",
+   "achat animal"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "81": {
+  "titleFrShort": "Avant l'intimité conjugale",
+  "keywordsFr": [
+   "intimité",
+   "rapport conjugal",
+   "relation intime",
+   "époux",
+   "couple",
+   "vie conjugale"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "82": {
+  "titleFrShort": "En cas de colère",
+  "keywordsFr": [
+   "colère",
+   "énervé",
+   "s'énerver",
+   "calme",
+   "dispute",
+   "s'emporter",
+   "nerveux",
+   "a'udhu billah"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "83": {
+  "titleFrShort": "En voyant une personne éprouvée",
+  "keywordsFr": [
+   "personne éprouvée",
+   "malheur",
+   "épreuve",
+   "handicap",
+   "malade",
+   "accident",
+   "préservé",
+   "gratitude"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "84": {
+  "titleFrShort": "Pendant une assemblée",
+  "keywordsFr": [
+   "assemblée",
+   "réunion",
+   "séance",
+   "istighfar",
+   "assis",
+   "100 fois",
+   "pardon",
+   "rassemblement"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS",
+   "FOCUS_FILTER"
+  ]
+ },
+ "85": {
+  "titleFrShort": "En quittant une assemblée",
+  "keywordsFr": [
+   "fin de réunion",
+   "kaffarat al-majlis",
+   "quitter une assemblée",
+   "fin de séance",
+   "se lever",
+   "expiation",
+   "subhanakallahumma",
+   "réunion"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "FOCUS_FILTER",
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ },
+ "86": {
+  "titleFrShort": "Réponse à « Qu'Allah te pardonne »",
+  "keywordsFr": [
+   "qu'Allah te pardonne",
+   "ghafarAllahu lak",
+   "répondre",
+   "wa lak",
+   "et toi aussi",
+   "pardon"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "87": {
+  "titleFrShort": "Pour qui rend service",
+  "keywordsFr": [
+   "merci",
+   "remercier",
+   "jazak Allah khayr",
+   "service rendu",
+   "gratitude",
+   "bienfait",
+   "faveur"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "88": {
+  "titleFrShort": "Protection contre le Dajjal",
+  "keywordsFr": [
+   "dajjal",
+   "antéchrist",
+   "sourate al-kahf",
+   "kahf",
+   "vendredi",
+   "fin des temps",
+   "protection",
+   "fitna"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "TIME",
+   "QUICK_ACCESS"
+  ]
+ },
+ "89": {
+  "titleFrShort": "Quand on te dit « je t'aime pour Allah »",
+  "keywordsFr": [
+   "je t'aime pour Allah",
+   "uhibbuka fillah",
+   "amour pour Allah",
+   "fraternité",
+   "ami",
+   "affection",
+   "répondre"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "90": {
+  "titleFrShort": "Quand on t'offre une part de ses biens",
+  "keywordsFr": [
+   "cadeau",
+   "don",
+   "argent",
+   "offrir",
+   "générosité",
+   "remercier",
+   "barakallahu laka",
+   "biens"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "91": {
+  "titleFrShort": "En remboursant un prêt",
+  "keywordsFr": [
+   "prêt",
+   "rembourser",
+   "dette",
+   "emprunt",
+   "argent",
+   "créancier",
+   "remercier"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "92": {
+  "titleFrShort": "Pour se protéger du shirk",
+  "keywordsFr": [
+   "shirk",
+   "associer",
+   "ostentation",
+   "riya",
+   "sincérité",
+   "intention",
+   "idolâtrie",
+   "protection"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "TIME",
+   "QUICK_ACCESS"
+  ]
+ },
+ "93": {
+  "titleFrShort": "Quand on te dit « Barakallahu fik »",
+  "keywordsFr": [
+   "barakallahu fik",
+   "wa fik",
+   "qu'Allah te bénisse",
+   "répondre",
+   "bénédiction",
+   "merci"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "94": {
+  "titleFrShort": "Face aux superstitions",
+  "keywordsFr": [
+   "superstition",
+   "mauvais présage",
+   "porte-malheur",
+   "malchance",
+   "pessimisme",
+   "chat noir",
+   "vendredi 13",
+   "signe"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "95": {
+  "titleFrShort": "En montant dans un véhicule",
+  "keywordsFr": [
+   "voiture",
+   "monter en voiture",
+   "véhicule",
+   "transport",
+   "trajet",
+   "conduire",
+   "bus",
+   "train",
+   "avion",
+   "moto"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "96": {
+  "titleFrShort": "En partant en voyage",
+  "keywordsFr": [
+   "voyage",
+   "partir en voyage",
+   "départ",
+   "avion",
+   "aéroport",
+   "gare",
+   "vacances",
+   "valise"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "97": {
+  "titleFrShort": "En entrant dans une ville",
+  "keywordsFr": [
+   "arriver en ville",
+   "entrer dans une ville",
+   "village",
+   "destination",
+   "nouvelle ville",
+   "arrivée",
+   "voyage"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "98": {
+  "titleFrShort": "En entrant au marché",
+  "keywordsFr": [
+   "marché",
+   "supermarché",
+   "centre commercial",
+   "courses",
+   "magasin",
+   "shopping",
+   "souk",
+   "boutique"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ },
+ "99": {
+  "titleFrShort": "Quand ton véhicule flanche",
+  "keywordsFr": [
+   "panne",
+   "voiture en panne",
+   "crevaison",
+   "trébucher",
+   "véhicule",
+   "bismillah",
+   "chute"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "100": {
+  "titleFrShort": "En quittant ses proches pour un voyage",
+  "keywordsFr": [
+   "au revoir",
+   "dire au revoir",
+   "adieu",
+   "partir",
+   "confier à Allah",
+   "famille",
+   "voyage",
+   "astawdi'ukum"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "101": {
+  "titleFrShort": "Pour quelqu'un qui part en voyage",
+  "keywordsFr": [
+   "bon voyage",
+   "souhaiter bon voyage",
+   "voyageur",
+   "départ d'un proche",
+   "dire au revoir",
+   "adieu",
+   "famille"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "102": {
+  "titleFrShort": "En voyage : montées et descentes",
+  "keywordsFr": [
+   "montée",
+   "descente",
+   "allahu akbar",
+   "subhanallah",
+   "décollage",
+   "atterrissage",
+   "côte",
+   "voyage"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "103": {
+  "titleFrShort": "Le voyageur à l'aube",
+  "keywordsFr": [
+   "aube",
+   "fajr",
+   "sahar",
+   "voyageur",
+   "voyage",
+   "lever du jour",
+   "matin"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "PRAYER",
+   "FOCUS_FILTER"
+  ]
+ },
+ "104": {
+  "titleFrShort": "En faisant halte en voyage",
+  "keywordsFr": [
+   "halte",
+   "pause",
+   "hôtel",
+   "étape",
+   "aire de repos",
+   "camping",
+   "s'arrêter",
+   "nouvel endroit",
+   "protection"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "SHORTCUTS_AUTOMATION",
+   "FOCUS_FILTER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "105": {
+  "titleFrShort": "Au retour de voyage",
+  "keywordsFr": [
+   "retour",
+   "rentrer de voyage",
+   "retour à la maison",
+   "fin des vacances",
+   "arrivée",
+   "voyage"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "FOCUS_FILTER",
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ },
+ "106": {
+  "titleFrShort": "Bonne ou mauvaise nouvelle",
+  "keywordsFr": [
+   "bonne nouvelle",
+   "mauvaise nouvelle",
+   "alhamdulillah",
+   "joie",
+   "réussite",
+   "contrariété",
+   "déception",
+   "épreuve",
+   "louange"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "107": {
+  "titleFrShort": "Prier sur le Prophète ﷺ",
+  "keywordsFr": [
+   "prière sur le prophète",
+   "salat sur le prophète",
+   "salawat",
+   "vendredi",
+   "jumu'a",
+   "prophète",
+   "sallallahu alayhi wa sallam"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "TIME"
+  ]
+ },
+ "108": {
+  "titleFrShort": "Répandre le salam",
+  "keywordsFr": [
+   "salam",
+   "saluer",
+   "salutation",
+   "assalamu alaykum",
+   "dire bonjour",
+   "fraternité",
+   "amour"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "TIME"
+  ]
+ },
+ "109": {
+  "titleFrShort": "Répondre au salam d'un non-musulman",
+  "keywordsFr": [
+   "salam",
+   "non-musulman",
+   "répondre",
+   "gens du Livre",
+   "chrétien",
+   "juif",
+   "wa alaykum",
+   "saluer"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "NONE"
+  ]
+ },
+ "110": {
+  "titleFrShort": "En entendant un coq ou un âne",
+  "keywordsFr": [
+   "coq",
+   "chant du coq",
+   "âne",
+   "braiement",
+   "animaux",
+   "ange",
+   "diable",
+   "bruit"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "111": {
+  "titleFrShort": "Chien qui aboie la nuit",
+  "keywordsFr": [
+   "chien qui aboie",
+   "aboiement",
+   "chien la nuit",
+   "âne",
+   "braiement",
+   "bruit la nuit",
+   "peur la nuit",
+   "protection",
+   "a'oudhou billah"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "112": {
+  "titleFrShort": "Pour celui qu'on a insulté",
+  "keywordsFr": [
+   "insulte",
+   "j'ai insulté",
+   "dispute",
+   "colère",
+   "s'emporter",
+   "médisance",
+   "regret",
+   "se faire pardonner",
+   "réconciliation"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "113": {
+  "titleFrShort": "Pour complimenter quelqu'un",
+  "keywordsFr": [
+   "compliment",
+   "complimenter",
+   "faire l'éloge",
+   "louer quelqu'un",
+   "recommandation",
+   "féliciter",
+   "témoignage",
+   "humilité"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "114": {
+  "titleFrShort": "Quand on vous complimente",
+  "keywordsFr": [
+   "compliment",
+   "on me complimente",
+   "éloge",
+   "félicitations",
+   "humilité",
+   "orgueil",
+   "louange",
+   "modestie"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "115": {
+  "titleFrShort": "La Talbiya (Hajj et Omra)",
+  "keywordsFr": [
+   "talbiya",
+   "labbayk",
+   "hajj",
+   "omra",
+   "umrah",
+   "pèlerinage",
+   "ihram",
+   "miqat",
+   "la Mecque"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "HIJRI",
+   "QUICK_ACCESS"
+  ]
+ },
+ "116": {
+  "titleFrShort": "Devant la Pierre noire",
+  "keywordsFr": [
+   "pierre noire",
+   "tawaf",
+   "tourner autour de la Kaaba",
+   "Kaaba",
+   "allahu akbar",
+   "omra",
+   "hajj",
+   "pèlerinage"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "117": {
+  "titleFrShort": "Entre l'angle yéménite et la Pierre noire",
+  "keywordsFr": [
+   "rabbana atina",
+   "angle yéménite",
+   "rukn yamani",
+   "pierre noire",
+   "tawaf",
+   "Kaaba",
+   "omra",
+   "hajj",
+   "bien ici-bas et dans l'au-delà"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "118": {
+  "titleFrShort": "Sur Safa et Marwa",
+  "keywordsFr": [
+   "safa",
+   "marwa",
+   "sa'y",
+   "say",
+   "course entre safa et marwa",
+   "omra",
+   "hajj",
+   "pèlerinage"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "119": {
+  "titleFrShort": "Le jour de 'Arafa",
+  "keywordsFr": [
+   "arafa",
+   "arafat",
+   "jour d'arafat",
+   "dhoul hijja",
+   "hajj",
+   "meilleure invocation",
+   "jeûne d'arafa",
+   "la ilaha illa Allah"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "HIJRI",
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "120": {
+  "titleFrShort": "À Muzdalifa",
+  "keywordsFr": [
+   "muzdalifa",
+   "mouzdalifa",
+   "mach'ar al-haram",
+   "hajj",
+   "nuit de muzdalifa",
+   "pèlerinage",
+   "dhoul hijja"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "HIJRI",
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "121": {
+  "titleFrShort": "Lapidation des stèles à Mina",
+  "keywordsFr": [
+   "lapidation",
+   "jamarat",
+   "stèles",
+   "mina",
+   "jeter les cailloux",
+   "hajj",
+   "jours de tachriq",
+   "allahu akbar"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "HIJRI",
+   "QUICK_ACCESS"
+  ]
+ },
+ "122": {
+  "titleFrShort": "Quand on est surpris",
+  "keywordsFr": [
+   "surprise",
+   "surpris",
+   "étonné",
+   "choqué",
+   "incroyable",
+   "subhanallah",
+   "allahu akbar",
+   "stupéfaction"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "123": {
+  "titleFrShort": "Face à une bonne nouvelle",
+  "keywordsFr": [
+   "bonne nouvelle",
+   "joie",
+   "réussite",
+   "examen réussi",
+   "naissance",
+   "prosternation de remerciement",
+   "soujoud choukr",
+   "gratitude",
+   "alhamdoulillah"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "124": {
+  "titleFrShort": "Quand on a mal",
+  "keywordsFr": [
+   "douleur",
+   "j'ai mal",
+   "mal de tête",
+   "mal de dos",
+   "migraine",
+   "maladie",
+   "blessure",
+   "souffrance",
+   "roqya",
+   "guérison"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "125": {
+  "titleFrShort": "Contre le mauvais œil",
+  "keywordsFr": [
+   "mauvais œil",
+   "oeil",
+   "jalousie",
+   "envie",
+   "admiration",
+   "machallah",
+   "tabarakallah",
+   "barakallah",
+   "bébé",
+   "protéger"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "126": {
+  "titleFrShort": "Quand on a peur",
+  "keywordsFr": [
+   "peur",
+   "effrayé",
+   "frayeur",
+   "panique",
+   "angoisse",
+   "terreur",
+   "sursaut",
+   "la ilaha illa Allah"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "127": {
+  "titleFrShort": "Au moment du sacrifice",
+  "keywordsFr": [
+   "sacrifice",
+   "mouton",
+   "aïd",
+   "aïd el-kebir",
+   "aïd al-adha",
+   "tabaski",
+   "égorger",
+   "abattage",
+   "aqiqa",
+   "bismillah allahu akbar"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "HIJRI",
+   "QUICK_ACCESS"
+  ]
+ },
+ "128": {
+  "titleFrShort": "Contre les ruses du diable",
+  "keywordsFr": [
+   "protection",
+   "diable",
+   "chaytane",
+   "djinn",
+   "sorcellerie",
+   "waswas",
+   "mauvaises pensées",
+   "peur la nuit",
+   "roqya",
+   "paroles parfaites d'Allah"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "129": {
+  "titleFrShort": "Repentir et istighfar",
+  "keywordsFr": [
+   "repentir",
+   "pardon",
+   "istighfar",
+   "astaghfirullah",
+   "péché",
+   "tawba",
+   "se repentir",
+   "dernier tiers de la nuit",
+   "tahajjud",
+   "demander pardon"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "TIME",
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "130": {
+  "titleFrShort": "Les mérites du dhikr",
+  "keywordsFr": [
+   "dhikr",
+   "zikr",
+   "rappel d'Allah",
+   "tasbih",
+   "subhanallah",
+   "alhamdoulillah",
+   "la ilaha illa Allah",
+   "allahu akbar",
+   "la hawla wa la quwwata",
+   "bonnes actions"
+  ],
+  "notifyAppropriate": "yes",
+  "mechanisms": [
+   "TIME",
+   "PRAYER",
+   "QUICK_ACCESS"
+  ]
+ },
+ "131": {
+  "titleFrShort": "Compter le tasbih sur ses doigts",
+  "keywordsFr": [
+   "tasbih",
+   "chapelet",
+   "sebha",
+   "compter sur les doigts",
+   "main droite",
+   "compteur",
+   "misbaha",
+   "subhanallah"
+  ],
+  "notifyAppropriate": "never",
+  "mechanisms": [
+   "QUICK_ACCESS"
+  ]
+ },
+ "132": {
+  "titleFrShort": "Quand la nuit tombe",
+  "keywordsFr": [
+   "enfants",
+   "maghrib",
+   "coucher du soleil",
+   "tombée de la nuit",
+   "fermer la porte",
+   "couvrir la nourriture",
+   "éteindre la lumière",
+   "soir",
+   "protéger la maison",
+   "bismillah"
+  ],
+  "notifyAppropriate": "opt-in-only",
+  "mechanisms": [
+   "PRAYER",
+   "FOCUS_FILTER",
+   "SHORTCUTS_AUTOMATION",
+   "QUICK_ACCESS"
+  ]
+ }
+}

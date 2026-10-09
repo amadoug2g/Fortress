@@ -19,19 +19,19 @@ final class CitadelleUITests: XCTestCase {
         let app = launchApp()
 
         tap("category-maison", in: app)
-        tap("chapter-4", in: app)
+        tap("chapter-11", in: app)
 
-        XCTAssertTrue(element("dua-4", in: app).waitForExistence(timeout: 5))
+        XCTAssertTrue(element("dua-1101", in: app).waitForExistence(timeout: 5))
     }
 
     @MainActor
     func testAChapterShowsEveryDuaForThatSituation() throws {
         let app = launchApp()
 
-        tap("category-quotidien", in: app)
+        tap("category-priere", in: app)
         tap("chapter-9", in: app)
 
-        for id in ["dua-10", "dua-11", "dua-12"] {
+        for id in ["dua-901", "dua-902", "dua-903"] {
             XCTAssertTrue(element(id, in: app).waitForExistence(timeout: 5), "\(id) is missing")
         }
     }
@@ -41,9 +41,9 @@ final class CitadelleUITests: XCTestCase {
         let app = launchApp()
 
         search("eternue", in: app)
-        tap("result-9", in: app)
+        tap("result-77", in: app)
 
-        XCTAssertTrue(element("dua-10", in: app).waitForExistence(timeout: 5))
+        XCTAssertTrue(element("dua-7701", in: app).waitForExistence(timeout: 5))
     }
 
     @MainActor
