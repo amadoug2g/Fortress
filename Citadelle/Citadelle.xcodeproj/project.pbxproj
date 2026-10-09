@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C8CC7D323078D2E000B79DCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8CC7D1C3078D2DE00B79DCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8CC7D233078D2DE00B79DCB;
+			remoteInfo = Citadelle;
+		};
+		C8CC7D3C3078D2E000B79DCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8CC7D1C3078D2DE00B79DCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8CC7D233078D2DE00B79DCB;
+			remoteInfo = Citadelle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8CC7D243078D2DE00B79DCB /* Citadelle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Citadelle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CC7D313078D2E000B79DCB /* CitadelleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitadelleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CC7D3B3078D2E000B79DCB /* CitadelleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitadelleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C8CC7D263078D2DE00B79DCB /* Citadelle */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Citadelle;
+			sourceTree = "<group>";
+		};
+		C8CC7D343078D2E000B79DCB /* CitadelleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CitadelleTests;
+			sourceTree = "<group>";
+		};
+		C8CC7D3E3078D2E000B79DCB /* CitadelleUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CitadelleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8CC7D213078D2DE00B79DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		C8CC7D2E3078D2E000B79DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		C8CC7D383078D2E000B79DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8CC7D1B3078D2DE00B79DCB = {
+			isa = PBXGroup;
+			children = (
+				C8CC7D263078D2DE00B79DCB /* Citadelle */,
+				C8CC7D343078D2E000B79DCB /* CitadelleTests */,
+				C8CC7D3E3078D2E000B79DCB /* CitadelleUITests */,
+				C8CC7D253078D2DE00B79DCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8CC7D253078D2DE00B79DCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8CC7D243078D2DE00B79DCB /* Citadelle.app */,
+				C8CC7D313078D2E000B79DCB /* CitadelleTests.xctest */,
+				C8CC7D3B3078D2E000B79DCB /* CitadelleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8CC7D233078D2DE00B79DCB /* Citadelle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CC7D433078D2E000B79DCB /* Build configuration list for PBXNativeTarget "Citadelle" */;
+			buildPhases = (
+				C8CC7D203078D2DE00B79DCB /* Sources */,
+				C8CC7D213078D2DE00B79DCB /* Frameworks */,
+				C8CC7D223078D2DE00B79DCB /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				C8CC7D263078D2DE00B79DCB /* Citadelle */,
+			);
+			name = Citadelle;
+			productName = Citadelle;
+			productReference = C8CC7D243078D2DE00B79DCB /* Citadelle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8CC7D303078D2E000B79DCB /* CitadelleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CC7D463078D2E000B79DCB /* Build configuration list for PBXNativeTarget "CitadelleTests" */;
+			buildPhases = (
+				C8CC7D2D3078D2E000B79DCB /* Sources */,
+				C8CC7D2E3078D2E000B79DCB /* Frameworks */,
+				C8CC7D2F3078D2E000B79DCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8CC7D333078D2E000B79DCB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C8CC7D343078D2E000B79DCB /* CitadelleTests */,
+			);
+			name = CitadelleTests;
+			productName = CitadelleTests;
+			productReference = C8CC7D313078D2E000B79DCB /* CitadelleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8CC7D3A3078D2E000B79DCB /* CitadelleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CC7D493078D2E000B79DCB /* Build configuration list for PBXNativeTarget "CitadelleUITests" */;
+			buildPhases = (
+				C8CC7D373078D2E000B79DCB /* Sources */,
+				C8CC7D383078D2E000B79DCB /* Frameworks */,
+				C8CC7D393078D2E000B79DCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8CC7D3D3078D2E000B79DCB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C8CC7D3E3078D2E000B79DCB /* CitadelleUITests */,
+			);
+			name = CitadelleUITests;
+			productName = CitadelleUITests;
+			productReference = C8CC7D3B3078D2E000B79DCB /* CitadelleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8CC7D1C3078D2DE00B79DCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					C8CC7D233078D2DE00B79DCB = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					C8CC7D303078D2E000B79DCB = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = C8CC7D233078D2DE00B79DCB;
+					};
+					C8CC7D3A3078D2E000B79DCB = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = C8CC7D233078D2DE00B79DCB;
+					};
+				};
+			};
+			buildConfigurationList = C8CC7D1F3078D2DE00B79DCB /* Build configuration list for PBXProject "Citadelle" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8CC7D1B3078D2DE00B79DCB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C8CC7D253078D2DE00B79DCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8CC7D233078D2DE00B79DCB /* Citadelle */,
+				C8CC7D303078D2E000B79DCB /* CitadelleTests */,
+				C8CC7D3A3078D2E000B79DCB /* CitadelleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8CC7D223078D2DE00B79DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		C8CC7D2F3078D2E000B79DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		C8CC7D393078D2E000B79DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8CC7D203078D2DE00B79DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		C8CC7D2D3078D2E000B79DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		C8CC7D373078D2E000B79DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8CC7D333078D2E000B79DCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8CC7D233078D2DE00B79DCB /* Citadelle */;
+			targetProxy = C8CC7D323078D2E000B79DCB /* PBXContainerItemProxy */;
+		};
+		C8CC7D3D3078D2E000B79DCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8CC7D233078D2DE00B79DCB /* Citadelle */;
+			targetProxy = C8CC7D3C3078D2E000B79DCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C8CC7D413078D2E000B79DCB /* Debug configuration for PBXProject "Citadelle" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q6J6G98354;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8CC7D423078D2E000B79DCB /* Release configuration for PBXProject "Citadelle" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q6J6G98354;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8CC7D443078D2E000B79DCB /* Debug configuration for PBXNativeTarget "Citadelle" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6J6G98354;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playgroundagc.Citadelle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8CC7D453078D2E000B79DCB /* Release configuration for PBXNativeTarget "Citadelle" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6J6G98354;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playgroundagc.Citadelle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8CC7D473078D2E000B79DCB /* Debug configuration for PBXNativeTarget "CitadelleTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6J6G98354;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playgroundagc.CitadelleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citadelle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Citadelle";
+			};
+			name = Debug;
+		};
+		C8CC7D483078D2E000B79DCB /* Release configuration for PBXNativeTarget "CitadelleTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6J6G98354;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playgroundagc.CitadelleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citadelle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Citadelle";
+			};
+			name = Release;
+		};
+		C8CC7D4A3078D2E000B79DCB /* Debug configuration for PBXNativeTarget "CitadelleUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6J6G98354;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playgroundagc.CitadelleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Citadelle;
+			};
+			name = Debug;
+		};
+		C8CC7D4B3078D2E000B79DCB /* Release configuration for PBXNativeTarget "CitadelleUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6J6G98354;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playgroundagc.CitadelleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Citadelle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8CC7D1F3078D2DE00B79DCB /* Build configuration list for PBXProject "Citadelle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CC7D413078D2E000B79DCB /* Debug configuration for PBXProject "Citadelle" */,
+				C8CC7D423078D2E000B79DCB /* Release configuration for PBXProject "Citadelle" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		C8CC7D433078D2E000B79DCB /* Build configuration list for PBXNativeTarget "Citadelle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CC7D443078D2E000B79DCB /* Debug configuration for PBXNativeTarget "Citadelle" */,
+				C8CC7D453078D2E000B79DCB /* Release configuration for PBXNativeTarget "Citadelle" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		C8CC7D463078D2E000B79DCB /* Build configuration list for PBXNativeTarget "CitadelleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CC7D473078D2E000B79DCB /* Debug configuration for PBXNativeTarget "CitadelleTests" */,
+				C8CC7D483078D2E000B79DCB /* Release configuration for PBXNativeTarget "CitadelleTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		C8CC7D493078D2E000B79DCB /* Build configuration list for PBXNativeTarget "CitadelleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CC7D4A3078D2E000B79DCB /* Debug configuration for PBXNativeTarget "CitadelleUITests" */,
+				C8CC7D4B3078D2E000B79DCB /* Release configuration for PBXNativeTarget "CitadelleUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8CC7D1C3078D2DE00B79DCB /* Project object */;
+	validationLevel = 1;
+}
