@@ -14,7 +14,7 @@ typealias LocalizedText = [String: String]
 nonisolated extension Dictionary where Key == String, Value == String {
     /// The text in `language`, falling back to French, then to any language.
     func text(for language: String) -> String {
-        ""
+        self[language] ?? self["fr"] ?? sorted { $0.key < $1.key }.first?.value ?? ""
     }
 }
 
@@ -63,22 +63,26 @@ nonisolated struct Dua: Codable, Hashable, Identifiable, Sendable {
 
 nonisolated extension Library {
     var sortedCategories: [DuaCategory] {
-        []
+        categories.sorted { $0.order < $1.order }
     }
 
     func chapters(in categoryID: String) -> [Chapter] {
-        []
+        chapters
+            .filter { $0.categoryId == categoryID }
+            .sorted { $0.order < $1.order }
     }
 
     func duas(in chapterID: Int) -> [Dua] {
-        []
+        duas
+            .filter { $0.chapterId == chapterID }
+            .sorted { $0.order < $1.order }
     }
 
     func chapter(withID id: Int) -> Chapter? {
-        nil
+        chapters.first { $0.id == id }
     }
 
     func category(withID id: String) -> DuaCategory? {
-        nil
+        categories.first { $0.id == id }
     }
 }

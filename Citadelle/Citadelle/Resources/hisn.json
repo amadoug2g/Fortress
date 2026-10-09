@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "isSample": true,
+  "categories": [
+    { "id": "matin-soir", "order": 1, "icon": "sun.horizon", "title": { "fr": "Matin, soir et sommeil" } },
+    { "id": "maison", "order": 2, "icon": "house", "title": { "fr": "Maison" } },
+    { "id": "repas", "order": 3, "icon": "fork.knife", "title": { "fr": "Repas" } },
+    { "id": "quotidien", "order": 4, "icon": "cloud.sun", "title": { "fr": "Vie quotidienne" } },
+    { "id": "epreuves", "order": 5, "icon": "heart", "title": { "fr": "Épreuves et inquiétudes" } }
+  ],
+  "chapters": [
+    {
+      "id": 1, "categoryId": "matin-soir", "order": 1,
+      "title": { "fr": "Au réveil" },
+      "keywords": { "fr": ["se lever", "se réveiller", "matin", "sommeil"] }
+    },
+    {
+      "id": 2, "categoryId": "matin-soir", "order": 3,
+      "title": { "fr": "Avant de dormir" },
+      "keywords": { "fr": ["coucher", "nuit", "sommeil", "lit"] }
+    },
+    {
+      "id": 3, "categoryId": "matin-soir", "order": 2,
+      "title": { "fr": "Évocations du matin et du soir" },
+      "keywords": { "fr": ["matin", "soir", "adhkar", "dhikr", "rappel"] }
+    },
+    {
+      "id": 4, "categoryId": "maison", "order": 1,
+      "title": { "fr": "En entrant dans la maison" },
+      "keywords": { "fr": ["rentrer", "chez soi", "domicile"] }
+    },
+    {
+      "id": 5, "categoryId": "maison", "order": 2,
+      "title": { "fr": "En sortant de la maison" },
+      "keywords": { "fr": ["partir", "quitter", "chez soi", "domicile"] }
+    },
+    {
+      "id": 6, "categoryId": "maison", "order": 3,
+      "title": { "fr": "En entrant aux toilettes" },
+      "keywords": { "fr": ["wc", "salle de bain", "besoins"] }
+    },
+    {
+      "id": 7, "categoryId": "maison", "order": 4,
+      "title": { "fr": "En sortant des toilettes" },
+      "keywords": { "fr": ["wc", "salle de bain", "besoins"] }
+    },
+    {
+      "id": 8, "categoryId": "repas", "order": 1,
+      "title": { "fr": "Avant de manger" },
+      "keywords": { "fr": ["repas", "nourriture", "table", "oubli"] }
+    },
+    {
+      "id": 9, "categoryId": "quotidien", "order": 1,
+      "title": { "fr": "Quand on éternue" },
+      "keywords": { "fr": ["éternuement", "atchoum", "rhume"] }
+    },
+    {
+      "id": 10, "categoryId": "quotidien", "order": 2,
+      "title": { "fr": "Quand il pleut" },
+      "keywords": { "fr": ["pluie", "météo", "orage"] }
+    },
+    {
+      "id": 11, "categoryId": "epreuves", "order": 1,
+      "title": { "fr": "En cas d'angoisse et de détresse" },
+      "keywords": { "fr": ["angoisse", "anxiété", "stress", "peur", "tristesse", "inquiétude", "difficulté"] }
+    }
+  ],
+  "duas": [
+    {
+      "id": 1, "chapterId": 1, "order": 1,
+      "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+      "translation": { "fr": "Louange à Allah qui nous a rendu la vie après nous avoir fait mourir, et c'est vers Lui que sera la résurrection." },
+      "repeatCount": 1,
+      "source": "Al-Bukhârî"
+    },
+    {
+      "id": 2, "chapterId": 2, "order": 1,
+      "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+      "translation": { "fr": "C'est en Ton nom, ô Allah, que je meurs et que je vis." },
+      "repeatCount": 1,
+      "source": "Al-Bukhârî"
+    },
+    {
+      "id": 3, "chapterId": 3, "order": 1,
+      "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+      "translation": { "fr": "Gloire et louange à Allah." },
+      "repeatCount": 100,
+      "note": { "fr": "À dire le matin et le soir." },
+      "source": "Muslim"
+    },
+    {
+      "id": 4, "chapterId": 4, "order": 1,
+      "arabic": "بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا",
+      "translation": { "fr": "Au nom d'Allah nous entrons, au nom d'Allah nous sortons, et en notre Seigneur nous plaçons notre confiance." },
+      "repeatCount": 1,
+      "source": "Abû Dâwûd"
+    },
+    {
+      "id": 5, "chapterId": 5, "order": 1,
+      "arabic": "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+      "translation": { "fr": "Au nom d'Allah, je place ma confiance en Allah, et il n'y a de force ni de puissance qu'en Allah." },
+      "repeatCount": 1,
+      "source": "Abû Dâwûd, At-Tirmidhî"
+    },
+    {
+      "id": 6, "chapterId": 6, "order": 1,
+      "arabic": "بِسْمِ اللَّهِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
+      "translation": { "fr": "Au nom d'Allah. Ô Allah, je cherche refuge auprès de Toi contre les démons mâles et femelles." },
+      "repeatCount": 1,
+      "source": "Al-Bukhârî, Muslim"
+    },
+    {
+      "id": 7, "chapterId": 7, "order": 1,
+      "arabic": "غُفْرَانَكَ",
+      "translation": { "fr": "(J'implore) Ton pardon." },
+      "repeatCount": 1,
+      "source": "Abû Dâwûd, At-Tirmidhî"
+    },
+    {
+      "id": 8, "chapterId": 8, "order": 1,
+      "arabic": "بِسْمِ اللَّهِ",
+      "translation": { "fr": "Au nom d'Allah." },
+      "repeatCount": 1,
+      "source": "Abû Dâwûd, At-Tirmidhî"
+    },
+    {
+      "id": 9, "chapterId": 8, "order": 2,
+      "arabic": "بِسْمِ اللَّهِ فِي أَوَّلِهِ وَآخِرِهِ",
+      "translation": { "fr": "Au nom d'Allah, au début et à la fin." },
+      "repeatCount": 1,
+      "note": { "fr": "Si l'on a oublié de dire « Bismillah » au début du repas." },
+      "source": "Abû Dâwûd, At-Tirmidhî"
+    },
+    {
+      "id": 10, "chapterId": 9, "order": 1,
+      "arabic": "الْحَمْدُ لِلَّهِ",
+      "translation": { "fr": "Louange à Allah." },
+      "repeatCount": 1,
+      "note": { "fr": "Celui qui éternue." },
+      "source": "Al-Bukhârî"
+    },
+    {
+      "id": 11, "chapterId": 9, "order": 2,
+      "arabic": "يَرْحَمُكَ اللَّهُ",
+      "translation": { "fr": "Qu'Allah te fasse miséricorde." },
+      "repeatCount": 1,
+      "note": { "fr": "Celui qui l'entend répond." },
+      "source": "Al-Bukhârî"
+    },
+    {
+      "id": 12, "chapterId": 9, "order": 3,
+      "arabic": "يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ",
+      "translation": { "fr": "Qu'Allah vous guide et améliore votre état." },
+      "repeatCount": 1,
+      "note": { "fr": "Celui qui a éternué répond à son tour." },
+      "source": "Al-Bukhârî"
+    },
+    {
+      "id": 13, "chapterId": 10, "order": 1,
+      "arabic": "اللَّهُمَّ صَيِّبًا نَافِعًا",
+      "translation": { "fr": "Ô Allah, (fais-en) une pluie abondante et bénéfique." },
+      "repeatCount": 1,
+      "source": "Al-Bukhârî"
+    },
+    {
+      "id": 14, "chapterId": 11, "order": 1,
+      "arabic": "لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+      "translation": { "fr": "Il n'y a de divinité que Toi, gloire à Toi, j'ai certes été parmi les injustes." },
+      "repeatCount": 1,
+      "source": "At-Tirmidhî"
+    },
+    {
+      "id": 15, "chapterId": 11, "order": 2,
+      "arabic": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+      "translation": { "fr": "Allah nous suffit, et quel excellent Garant." },
+      "repeatCount": 1,
+      "source": "Coran 3:173, Al-Bukhârî"
+    }
+  ]
+}
