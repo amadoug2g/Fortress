@@ -5,7 +5,8 @@ Sources:
   (MIT License, (c) 2021 Abdellah SELLAM), https://github.com/asellam/HisnElMuslim
 - chapters_fr.json: our own short French titles and search keywords,
   keyed by the book's official chapter number (1 to 132).
-- translations_fr.json (optional): our own French translations, keyed by dua id.
+- translations_fr.json (optional): our own French translations, made from the
+  Arabic, keyed by dua id: {"text", "source" (reference in French), "note"?}.
 
 Chapter ids follow the book's official numbering. The source splits morning
 and evening remembrances, so evening gets its own chapter, EVENING_ID.
@@ -99,16 +100,21 @@ def build(source):
         })
         for index, adhkar in enumerate(entry["Adhkar"], 1):
             dua_id = chapter_id * 100 + index
-            french = translations.get(str(dua_id))
-            duas.append({
+            french = translations.get(str(dua_id), {})
+            dua = {
                 "id": dua_id,
                 "chapterId": chapter_id,
                 "order": index,
                 "arabic": clean_text(adhkar["Text"]),
-                "translation": {"fr": french} if french else {},
+                "translation": {"fr": french["text"]} if french.get("text") else {},
                 "repeatCount": max(1, int(adhkar.get("Count") or 1)),
-                "source": clean_text(adhkar.get("Reference", "")),
-            })
+                # The French rendering of the reference when we have one,
+                # otherwise the original Arabic reference.
+                "source": french.get("source") or clean_text(adhkar.get("Reference", "")),
+            }
+            if french.get("note"):
+                dua["note"] = {"fr": french["note"]}
+            duas.append(dua)
 
     return {
         "version": 2,
