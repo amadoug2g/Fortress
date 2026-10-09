@@ -18,13 +18,8 @@ struct BundledLibraryTests {
         #expect(!library.duas.isEmpty)
     }
 
-    /// French translations are being written (import step 2); until every dua
-    /// has one, a missing translation is the only problem tolerated here.
-    @Test func bundledLibraryHasNoIssuesApartFromPendingTranslations() throws {
-        let issues = try LibraryLoader.loadBundled().validate().filter {
-            if case .missingTranslation = $0 { return false }
-            return true
-        }
+    @Test func bundledLibraryHasNoIssues() throws {
+        let issues = try LibraryLoader.loadBundled().validate()
 
         #expect(issues == [], "Content problems: \(issues)")
     }
