@@ -5,20 +5,45 @@
 //  Created by Amadou on 09.10.2026.
 //
 
+import Foundation
 import SwiftUI
 
+/// Root screen: categories to browse, replaced by results while searching.
 struct ContentView: View {
+    let library: Library
+    private let searchEngine: SearchEngine
+    @State private var query = ""
+
+    init(library: Library) {
+        self.library = library
+        self.searchEngine = SearchEngine(library: library, language: AppLanguage.content)
+    }
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Group {
+                if query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                    CategoryListView(library: library)
+                } else {
+                    SearchResultsView(results: searchEngine.search(query), library: library)
+                }
+            }
+            .navigationTitle("Citadelle")
+            .navigationDestination(for: DuaCategory.self) { category in
+                ChapterListView(category: category, library: library)
+            }
+            .navigationDestination(for: Chapter.self) { chapter in
+                ChapterDetailView(chapter: chapter, library: library)
+            }
+            .searchable(
+                text: $query,
+                placement: .navigationBarDrawer(displayMode: .always),
+                prompt: "Réveil, pluie, angoisse…"
+            )
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(library: .preview)
 }
