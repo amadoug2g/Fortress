@@ -46,6 +46,11 @@ jobs:
           ')
           echo "udid=$UDID" >> "$GITHUB_OUTPUT"
 
+      # A cold simulator can make the first UI-test launch time out, so boot
+      # it and wait until it is fully ready before testing.
+      - name: Boot the simulator
+        run: xcrun simctl bootstatus "${{ steps.sim.outputs.udid }}" -b
+
       - name: Run unit and UI tests
         run: |
           set +e
@@ -54,6 +59,7 @@ jobs:
             -scheme Citadelle \
             -destination "id=${{ steps.sim.outputs.udid }}" \
             -resultBundlePath TestResults.xcresult \
+            -parallel-testing-enabled NO \
             CODE_SIGNING_ALLOWED=NO \
             > xcodebuild.log 2>&1
           STATUS=$?
