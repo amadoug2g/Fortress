@@ -7,37 +7,80 @@
 
 import XCTest
 
+/// Walks through the app like a user would, on the bundled sample content.
 final class CitadelleUITests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     @MainActor
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testBrowsingFromACategoryToADua() throws {
+        let app = launchApp()
+
+        tap("category-maison", in: app)
+        tap("chapter-4", in: app)
+
+        XCTAssertTrue(element("dua-4", in: app).waitForExistence(timeout: 5))
+    }
+
+    @MainActor
+    func testAChapterShowsEveryDuaForThatSituation() throws {
+        let app = launchApp()
+
+        tap("category-quotidien", in: app)
+        tap("chapter-9", in: app)
+
+        for id in ["dua-10", "dua-11", "dua-12"] {
+            XCTAssertTrue(element(id, in: app).waitForExistence(timeout: 5), "\(id) is missing")
+        }
+    }
+
+    @MainActor
+    func testSearchingWithoutAccentsFindsTheSituation() throws {
+        let app = launchApp()
+
+        search("eternue", in: app)
+        tap("result-9", in: app)
+
+        XCTAssertTrue(element("dua-10", in: app).waitForExistence(timeout: 5))
+    }
+
+    @MainActor
+    func testSearchWithNoMatchSaysSo() throws {
+        let app = launchApp()
+
+        search("ordinateur", in: app)
+
+        XCTAssertTrue(app.staticTexts["Aucun résultat"].waitForExistence(timeout: 5))
+    }
+
+    // MARK: - Helpers
+
+    @MainActor
+    private func launchApp() -> XCUIApplication {
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // XCUIAutomation Documentation
-        // https://developer.apple.com/documentation/xcuiautomation
+        return app
     }
 
     @MainActor
-    func testLaunchPerformance() throws {
-        // This measures how long it takes to launch your application.
-        measure(metrics: [XCTApplicationLaunchMetric()]) {
-            XCUIApplication().launch()
-        }
+    private func element(_ identifier: String, in app: XCUIApplication) -> XCUIElement {
+        app.descendants(matching: .any).matching(identifier: identifier).firstMatch
+    }
+
+    @MainActor
+    private func tap(_ identifier: String, in app: XCUIApplication, file: StaticString = #filePath, line: UInt = #line) {
+        let target = element(identifier, in: app)
+        XCTAssertTrue(target.waitForExistence(timeout: 10), "\(identifier) not found", file: file, line: line)
+        target.tap()
+    }
+
+    @MainActor
+    private func search(_ text: String, in app: XCUIApplication) {
+        let field = app.searchFields.firstMatch
+        XCTAssertTrue(field.waitForExistence(timeout: 10), "Search field not found")
+        field.tap()
+        field.typeText(text)
     }
 }
