@@ -1,0 +1,76 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Build and test (iOS Simulator)
+    runs-on: macos-26
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: Citadelle
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select newest Xcode
+        run: |
+          ls -d /Applications/Xcode*.app
+          XCODE=$(ls -d /Applications/Xcode_*.app | grep -vi beta | sort -V | tail -1)
+          echo "Using $XCODE"
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Pick an iPhone simulator on the newest iOS runtime
+        id: sim
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c '
+          import json, re, sys
+          data = json.load(sys.stdin)["devices"]
+          def version(runtime):
+              return [int(n) for n in re.findall(r"\d+", runtime.split("iOS")[-1])]
+          ios = sorted((r for r in data if ".iOS-" in r), key=version, reverse=True)
+          for runtime in ios:
+              phones = [d for d in data[runtime] if d["name"].startswith("iPhone")]
+              if phones:
+                  print(phones[0]["udid"], file=sys.stdout)
+                  print(runtime, phones[0]["name"], file=sys.stderr)
+                  break
+          ')
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+
+      - name: Run unit and UI tests
+        run: |
+          set +e
+          xcodebuild test \
+            -project Citadelle.xcodeproj \
+            -scheme Citadelle \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -resultBundlePath TestResults.xcresult \
+            CODE_SIGNING_ALLOWED=NO \
+            > xcodebuild.log 2>&1
+          STATUS=$?
+          # Short summary: compiler errors, test results, final verdict.
+          grep -E "error:|Test (Suite|Case)|Test run|✔|✘|\*\* (BUILD|TEST)" xcodebuild.log | tail -300
+          if [ $STATUS -ne 0 ]; then
+            echo "---- last 80 lines of xcodebuild.log ----"
+            tail -80 xcodebuild.log
+          fi
+          exit $STATUS
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: |
+            Citadelle/TestResults.xcresult
+            Citadelle/xcodebuild.log
+          retention-days: 7
