@@ -10,8 +10,10 @@ nonisolated extension Dua {
     /// (Ayat al-Kursi, long supplications) don't bury the next ones.
     static let foldThreshold = 280
 
+    /// Counted in Unicode scalars: Swift's `count` merges each letter with
+    /// its vowel marks, which would make vocalised text look half as long.
     var startsFolded: Bool {
-        arabic.count > Self.foldThreshold
+        arabic.unicodeScalars.count > Self.foldThreshold
     }
 
     /// Recordings to try in order: this dua's own, then its situation's.

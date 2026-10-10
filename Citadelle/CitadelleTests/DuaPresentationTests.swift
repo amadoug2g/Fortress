@@ -18,6 +18,11 @@ struct DuaPresentationTests {
         #expect(dua(arabic: String(repeating: "ب", count: 400)).startsFolded)
     }
 
+    @Test func vowelMarksCountTowardsTheLength() {
+        // Each letter carries a vowel mark: 200 visible letters, 400 signs.
+        #expect(dua(arabic: String(repeating: "بِ", count: 200)).startsFolded)
+    }
+
     @Test func audioPrefersTheDuaRecordingThenTheChapterOne() {
         let chapter = Chapter(id: 1, categoryId: "c", order: 1, title: ["fr": "x"], keywords: nil,
                               audio: "https://example.org/chapter.mp3")
