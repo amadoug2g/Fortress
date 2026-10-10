@@ -55,11 +55,59 @@ final class CitadelleUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Aucun résultat"].waitForExistence(timeout: 5))
     }
 
+    @MainActor
+    func testAFavoriteShowsUpInFavoritesUnderItsTheme() throws {
+        let app = launchApp()
+
+        tap("category-maison", in: app)
+        tap("chapter-11", in: app)
+        tap("favorite-1101", in: app)
+        goBack(in: app)
+        goBack(in: app)
+        tap("favorites", in: app)
+
+        XCTAssertTrue(app.staticTexts["Maison et vêtements"].waitForExistence(timeout: 5))
+        XCTAssertTrue(element("dua-1101", in: app).waitForExistence(timeout: 5))
+    }
+
+    @MainActor
+    func testFavoritesStartEmpty() throws {
+        let app = launchApp()
+
+        tap("favorites", in: app)
+
+        XCTAssertTrue(app.staticTexts["Aucun favori"].waitForExistence(timeout: 5))
+    }
+
+    @MainActor
+    func testALongDuaStartsFoldedAndCanBeUnfolded() throws {
+        let app = launchApp()
+
+        tap("category-matin-soir", in: app)
+        tap("chapter-27", in: app)
+        let toggle = element("toggle-2702", in: app)
+        XCTAssertTrue(toggle.waitForExistence(timeout: 5))
+        XCTAssertEqual(toggle.value as? String, "Replié")
+
+        toggle.tap()
+
+        XCTAssertEqual(toggle.value as? String, "Déplié")
+    }
+
     // MARK: - Helpers
+
+    @MainActor
+    private func goBack(in app: XCUIApplication) {
+        let back = app.navigationBars.buttons.element(boundBy: 0)
+        XCTAssertTrue(back.waitForExistence(timeout: 5))
+        back.tap()
+    }
+
 
     @MainActor
     private func launchApp() -> XCUIApplication {
         let app = XCUIApplication()
+        app.launchArguments = ["-resetState"]
         app.launch()
         return app
     }

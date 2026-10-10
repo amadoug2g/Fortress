@@ -8,6 +8,11 @@
 import Foundation
 import SwiftUI
 
+/// Destinations that are not content values.
+nonisolated enum AppRoute: Hashable {
+    case favorites
+}
+
 /// Root screen: categories to browse, replaced by results while searching.
 struct ContentView: View {
     let library: Library
@@ -35,6 +40,12 @@ struct ContentView: View {
             .navigationDestination(for: Chapter.self) { chapter in
                 ChapterDetailView(chapter: chapter, library: library)
             }
+            .navigationDestination(for: AppRoute.self) { route in
+                switch route {
+                case .favorites:
+                    FavoritesView(library: library)
+                }
+            }
             .searchable(
                 text: $query,
                 placement: .navigationBarDrawer(displayMode: .always),
@@ -46,4 +57,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView(library: .preview)
+        .environment(FavoritesStore())
+        .environment(AudioPlayer())
 }

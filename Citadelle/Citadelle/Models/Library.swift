@@ -42,6 +42,8 @@ nonisolated struct Chapter: Codable, Hashable, Identifiable, Sendable {
     var title: LocalizedText
     /// Extra words people might search with, per language.
     var keywords: [String: [String]]?
+    /// Recitation of the whole situation, streamed over HTTPS.
+    var audio: String?
 }
 
 nonisolated struct Dua: Codable, Hashable, Identifiable, Sendable {
@@ -55,7 +57,7 @@ nonisolated struct Dua: Codable, Hashable, Identifiable, Sendable {
     var repeatCount: Int
     var note: LocalizedText?
     var source: String
-    /// Audio file name in the app bundle (v2).
+    /// Recitation of this dua alone, streamed over HTTPS.
     var audio: String?
 }
 

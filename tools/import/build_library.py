@@ -5,6 +5,10 @@ Sources:
   (MIT License, (c) 2021 Abdellah SELLAM), https://github.com/asellam/HisnElMuslim
 - chapters_fr.json: our own short French titles and search keywords,
   keyed by the book's official chapter number (1 to 132).
+- hisnmuslim husn_en.json (optional third argument): only its per-dua audio
+  URLs (recitation by Hamad Al-Durayhim, streamed from hisnmuslim.com), used
+  where its chapter splits the duas exactly like the Arabic source.
+- translit_fr.json (optional): our own French-alphabet transliterations.
 - translations_fr.json (optional): our own French translations, made from the
   Arabic, keyed by dua id: {"text", "source" (reference in French), "note"?}.
 
@@ -12,7 +16,7 @@ Chapter ids follow the book's official numbering. The source splits morning
 and evening remembrances, so evening gets its own chapter, EVENING_ID.
 Dua ids are chapter id * 100 + position (e.g. 2703 is the 3rd dua of 27).
 
-Usage: python3 -I build_library.py <asellam hisn.json> <output hisn.json>
+Usage: python3 -I build_library.py <asellam hisn.json> <output hisn.json> [husn_en.json]
 """
 import json
 import pathlib
@@ -76,10 +80,24 @@ def clean_text(text):
     return "\n".join(line for line in lines if line)
 
 
-def build(source):
+def https(url):
+    return re.sub(r"^http://", "https://", url.strip()) if url else None
+
+
+def per_dua_audio(recitations):
+    """Official chapter id -> list of per-dua audio URLs, from husn_en.json."""
+    if not recitations:
+        return {}
+    return {c["ID"]: [https(t.get("AUDIO")) for t in c["TEXT"]] for c in recitations["English"]}
+
+
+def build(source, recitations=None):
     chapters_fr = {int(k): v for k, v in json.loads((HERE / "chapters_fr.json").read_text()).items()}
     translations_path = HERE / "translations_fr.json"
     translations = json.loads(translations_path.read_text()) if translations_path.exists() else {}
+    translit_path = HERE / "translit_fr.json"
+    transliterations = json.loads(translit_path.read_text()) if translit_path.exists() else {}
+    dua_audio = per_dua_audio(recitations)
 
     category_of, order_of = {}, {}
     for category_id, _, _, chapter_ids in CATEGORIES:
@@ -91,8 +109,12 @@ def build(source):
     for position, (_, entry) in enumerate(source.items(), 1):
         chapter_id = official_chapter_id(position)
         info = chapters_fr.get(27 if chapter_id == EVENING_ID else chapter_id, {})
+        recited = dua_audio.get(chapter_id, []) if chapter_id != EVENING_ID else []
+        if len(recited) != len(entry["Adhkar"]):
+            recited = []  # different split: per-dua audio would not line up
         chapters.append({
             "id": chapter_id,
+            "audio": https(entry.get("Audio")),
             "categoryId": category_of[chapter_id],
             "order": order_of[chapter_id],
             "title": {"fr": TITLE_OVERRIDES.get(chapter_id, info.get("titleFrShort", ""))},
@@ -114,6 +136,10 @@ def build(source):
             }
             if french.get("note"):
                 dua["note"] = {"fr": french["note"]}
+            if transliterations.get(str(dua_id), "").strip():
+                dua["transliteration"] = {"fr": transliterations[str(dua_id)].strip()}
+            if recited and recited[index - 1]:
+                dua["audio"] = recited[index - 1]
             duas.append(dua)
 
     return {
@@ -129,8 +155,13 @@ def build(source):
 
 if __name__ == "__main__":
     source = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8-sig"))
-    library = build(source)
+    recitations = None
+    if len(sys.argv) > 3:
+        recitations = json.loads(pathlib.Path(sys.argv[3]).read_text(encoding="utf-8-sig"))
+    library = build(source, recitations)
     pathlib.Path(sys.argv[2]).write_text(json.dumps(library, ensure_ascii=False, indent=1) + "\n")
     print(f"{len(library['categories'])} categories, {len(library['chapters'])} chapters, "
           f"{len(library['duas'])} duas, "
-          f"{sum(1 for d in library['duas'] if d['translation'])} translated")
+          f"{sum(1 for d in library['duas'] if d['translation'])} translated, "
+          f"{sum(1 for d in library['duas'] if d.get('transliteration'))} transliterated, "
+          f"{sum(1 for d in library['duas'] if d.get('audio'))} with their own audio")

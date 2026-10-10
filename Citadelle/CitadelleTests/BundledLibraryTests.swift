@@ -52,6 +52,26 @@ struct BundledLibraryTests {
         #expect(withoutSource.isEmpty, "No source: \(withoutSource.map(\.id))")
     }
 
+    @Test func everySituationCanBeListenedToOverHTTPS() throws {
+        let library = try LibraryLoader.loadBundled()
+
+        for chapter in library.chapters {
+            #expect(chapter.audio?.hasPrefix("https://") == true, "No audio for chapter \(chapter.id)")
+        }
+        for dua in library.duas where dua.audio != nil {
+            #expect(dua.audio?.hasPrefix("https://") == true, "Insecure audio for dua \(dua.id)")
+        }
+    }
+
+    @Test func recitedDuasComeWithATransliteration() throws {
+        let library = try LibraryLoader.loadBundled()
+        let transliterated = library.duas.filter { !($0.transliteration?["fr"] ?? "").isEmpty }
+
+        // Some entries are instructions or narrations with nothing to recite.
+        #expect(transliterated.count >= 250)
+        #expect(library.chapter(withID: 1).map { library.duas(in: $0.id).first?.transliteration?["fr"] != nil } == true)
+    }
+
     @Test func everyCategoryHasAtLeastOneChapter() throws {
         let library = try LibraryLoader.loadBundled()
 

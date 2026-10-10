@@ -8,6 +8,8 @@ import SwiftUI
 struct CategoryListView: View {
     let library: Library
 
+    @Environment(FavoritesStore.self) private var favorites
+
     var body: some View {
         List {
             if library.isSample == true {
@@ -19,6 +21,24 @@ struct CategoryListView: View {
                     .font(.footnote)
                     .foregroundStyle(.secondary)
                 }
+            }
+
+            Section {
+                NavigationLink(value: AppRoute.favorites) {
+                    Label {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Mes favoris")
+                                .font(.headline)
+                            Text(countLabel(favorites.ids.count, singular: "invocation", plural: "invocations"))
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                        }
+                    } icon: {
+                        Image(systemName: "star.fill")
+                            .foregroundStyle(.yellow)
+                    }
+                }
+                .accessibilityIdentifier("favorites")
             }
 
             Section {
@@ -52,4 +72,5 @@ struct CategoryListView: View {
     NavigationStack {
         CategoryListView(library: .preview)
     }
+    .environment(FavoritesStore())
 }

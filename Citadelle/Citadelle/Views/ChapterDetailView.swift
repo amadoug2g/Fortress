@@ -4,6 +4,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 /// Everything to say in one situation.
 struct ChapterDetailView: View {
@@ -18,14 +19,20 @@ struct ChapterDetailView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text(title)
                     .font(.title2.bold())
+                    .fixedSize(horizontal: false, vertical: true)
                     .accessibilityAddTraits(.isHeader)
 
                 ForEach(Array(duas.enumerated()), id: \.element.id) { index, dua in
-                    DuaCard(dua: dua, position: duas.count > 1 ? (index: index + 1, total: duas.count) : nil)
+                    DuaCard(
+                        dua: dua,
+                        position: duas.count > 1 ? (index: index + 1, total: duas.count) : nil,
+                        chapter: chapter
+                    )
                 }
             }
             .padding()
         }
+        .background(Color(uiColor: .systemGroupedBackground))
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -38,4 +45,6 @@ struct ChapterDetailView: View {
             ChapterDetailView(chapter: chapter, library: library)
         }
     }
+    .environment(FavoritesStore())
+    .environment(AudioPlayer())
 }
