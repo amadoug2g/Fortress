@@ -10,9 +10,11 @@ import SwiftUI
 
 @main
 struct CitadelleApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     private let library = Result { try LibraryLoader.loadBundled() }
     @State private var favorites: FavoritesStore
     @State private var audioPlayer = AudioPlayer()
+    @State private var reminders = ReminderSettingsStore()
 
     init() {
         let favorites = FavoritesStore()
@@ -30,6 +32,8 @@ struct CitadelleApp: App {
                 ContentView(library: library)
                     .environment(favorites)
                     .environment(audioPlayer)
+                    .environment(reminders)
+                    .environment(AppRouter.shared)
             case .failure(let error):
                 ContentUnavailableView(
                     "Impossible de charger le contenu",

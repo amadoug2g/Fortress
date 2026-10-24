@@ -11,6 +11,7 @@ import SwiftUI
 /// Destinations that are not content values.
 nonisolated enum AppRoute: Hashable {
     case favorites
+    case reminders
 }
 
 /// Root screen: categories to browse, replaced by results while searching.
@@ -18,6 +19,8 @@ struct ContentView: View {
     let library: Library
     private let searchEngine: SearchEngine
     @State private var query = ""
+    @State private var path = NavigationPath()
+    @Environment(AppRouter.self) private var router
 
     init(library: Library) {
         self.library = library
@@ -25,7 +28,7 @@ struct ContentView: View {
     }
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             Group {
                 if query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                     CategoryListView(library: library)
@@ -44,6 +47,17 @@ struct ContentView: View {
                 switch route {
                 case .favorites:
                     FavoritesView(library: library)
+                case .reminders:
+                    RemindersView(library: library)
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink(value: AppRoute.reminders) {
+                        Image(systemName: "bell")
+                    }
+                    .accessibilityLabel("Rappels")
+                    .accessibilityIdentifier("reminders")
                 }
             }
             .searchable(
@@ -52,6 +66,13 @@ struct ContentView: View {
                 prompt: "Réveil, pluie, angoisse…"
             )
         }
+        .onChange(of: router.pendingChapterID, initial: true) { _, chapterID in
+            guard let chapterID, let chapter = library.chapter(withID: chapterID) else { return }
+            router.pendingChapterID = nil
+            query = ""
+            path = NavigationPath()
+            path.append(chapter)
+        }
     }
 }
 
@@ -59,4 +80,5 @@ struct ContentView: View {
     ContentView(library: .preview)
         .environment(FavoritesStore())
         .environment(AudioPlayer())
+        .environment(AppRouter.shared)
 }

@@ -72,6 +72,20 @@ struct BundledLibraryTests {
         #expect(library.chapter(withID: 1).map { library.duas(in: $0.id).first?.transliteration?["fr"] != nil } == true)
     }
 
+    @Test func everyReminderPointsToARealSituation() throws {
+        let library = try LibraryLoader.loadBundled()
+
+        for kind in ReminderKind.allCases {
+            #expect(library.chapter(withID: kind.chapterID) != nil, "\(kind) has no situation")
+        }
+        #expect(ReminderPlanner.plan(
+            settings: Dictionary(uniqueKeysWithValues: ReminderKind.allCases.map {
+                ($0, ReminderSetting(isEnabled: true, hour: 8, minute: 0))
+            }),
+            library: library
+        ).count == ReminderKind.allCases.count)
+    }
+
     @Test func everyCategoryHasAtLeastOneChapter() throws {
         let library = try LibraryLoader.loadBundled()
 

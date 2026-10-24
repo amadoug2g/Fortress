@@ -94,6 +94,19 @@ final class CitadelleUITests: XCTestCase {
         XCTAssertEqual(toggle.value as? String, "Déplié")
     }
 
+    @MainActor
+    func testRemindersCanBeReachedFromHomeAndStartOff() throws {
+        let app = launchApp()
+
+        tap("reminders", in: app)
+
+        for kind in ["wakeUp", "morning", "evening", "bedtime"] {
+            let toggle = element("reminder-toggle-\(kind)", in: app)
+            XCTAssertTrue(toggle.waitForExistence(timeout: 5), "\(kind) toggle missing")
+        }
+        XCTAssertTrue(app.staticTexts["Quand mon réveil sonne"].exists)
+    }
+
     // MARK: - Helpers
 
     @MainActor
