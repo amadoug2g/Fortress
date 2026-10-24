@@ -62,8 +62,12 @@ final class CitadelleUITests: XCTestCase {
         tap("category-maison", in: app)
         tap("chapter-11", in: app)
         tap("favorite-1101", in: app)
-        goBack(in: app)
-        goBack(in: app)
+
+        // Relaunch without resetting: the favorite must survive, and the
+        // home screen is the starting point again.
+        app.terminate()
+        app.launchArguments = []
+        app.launch()
         tap("favorites", in: app)
 
         XCTAssertTrue(app.staticTexts["Maison et vêtements"].waitForExistence(timeout: 5))
@@ -108,14 +112,6 @@ final class CitadelleUITests: XCTestCase {
     }
 
     // MARK: - Helpers
-
-    @MainActor
-    private func goBack(in app: XCUIApplication) {
-        let back = app.navigationBars.buttons.element(boundBy: 0)
-        XCTAssertTrue(back.waitForExistence(timeout: 5))
-        back.tap()
-    }
-
 
     @MainActor
     private func launchApp() -> XCUIApplication {
